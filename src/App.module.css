@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  max-width: 736px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  /* Relative input */
+  /* 16px of padding - 16px/2 of font-size - half line height */
+  margin-top: calc(0px - 1.5rem - .25rem);
+}
+
+.form {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.field {
+  width: 100%;
+
+  outline: 0;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+
+  background: var(--gray-500);
+  color: var(--gray-100);
+
+  padding: 1rem;
+
+  font-size: 1rem;
+  line-height: 1.4;
+
+  transition: border .2s;
+}
+
+.field:focus {
+  border: 1px solid var(--purple-dark);
+}
+
+.field::placeholder {
+  color: var(--gray-300);
+}
