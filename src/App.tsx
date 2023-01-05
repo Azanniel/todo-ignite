@@ -1,4 +1,7 @@
+import { PlusCircle } from 'phosphor-react';
+
 import { Header } from './components/Header';
+import { Input } from './components/Input';
 
 import styles from './App.module.css';
 
@@ -9,13 +12,16 @@ export function App() {
 
       <main className={styles.container}>
         <form className={styles.form}>
-          <input
-            className={styles.field}
+          <Input
             type="text"
             placeholder="Adicione uma nova tarefa"
           />
 
-          <button>Criar</button>
+          <button className={styles.submit}>
+            <span>Criar</span>
+
+            <PlusCircle size={16} weight="bold" />
+          </button>
         </form>
       </main>
     </div>

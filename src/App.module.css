@@ -17,28 +17,29 @@
   gap: 0.5rem;
 }
 
-.field {
-  width: 100%;
-
-  outline: 0;
-  border: 1px solid var(--gray-700);
+.form .submit {
+  border: none;
   border-radius: 8px;
+  outline: none;
 
-  background: var(--gray-500);
+  background-color: var(--blue-dark);
+
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4;
   color: var(--gray-100);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
   padding: 1rem;
 
-  font-size: 1rem;
-  line-height: 1.4;
+  cursor: pointer;
 
-  transition: border .2s;
+  transition: background-color .2s;
 }
 
-.field:focus {
-  border: 1px solid var(--purple-dark);
-}
-
-.field::placeholder {
-  color: var(--gray-300);
+.form .submit:hover {
+  background-color: var(--blue);
 }
