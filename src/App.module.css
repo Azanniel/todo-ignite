@@ -43,3 +43,80 @@
 .form .submit:hover {
   background-color: var(--blue);
 }
+
+.tasks {
+  margin-top: 4rem;
+}
+
+.tasks .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks .info > div {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.tasks .info .created {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.tasks .info .done {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.tasks .info .counter {
+  background-color: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gray-200);
+
+  border-radius: 999px;
+}
+
+.tasks main {
+  margin-top: 1.5rem;
+}
+
+.tasks main .empty {
+  padding: 4rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.tasks main .empty img {
+  width: 56px;
+}
+
+.tasks main .empty p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--gray-300);
+}
+
+.tasks main .empty p > strong {
+  display: block;
+  font-weight: 700;
+}
+
+.tasks main .empty p > span {
+  display: block;
+}
