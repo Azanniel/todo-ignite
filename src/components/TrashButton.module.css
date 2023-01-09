@@ -1,0 +1,18 @@
+.trash {
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+  padding: 0.375rem;
+
+  background: none;
+  color: var(--gray-300);
+
+  cursor: pointer;
+
+  transition: background-color .2s;
+}
+
+.trash:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+}

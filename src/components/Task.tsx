@@ -1,4 +1,6 @@
 import { Checkbox } from './Checkbox';
+import { TrashButton } from './TrashButton';
+
 import styles from './Task.module.css';
 
 export function Task() {
@@ -8,7 +10,7 @@ export function Task() {
 
       <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
 
-      <span>Trash</span>
+      <TrashButton />
     </div>
   )
 }
