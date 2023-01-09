@@ -1,11 +1,18 @@
-import { PlusCircle } from 'phosphor-react';
-
 import { Header } from './components/Header';
 import { Input } from './components/Input';
+import { Button } from './components/Button';
 
 import clipboard from './assets/clipboard.png';
 
 import styles from './App.module.css';
+import { Task } from './components/Task';
+
+const tasks = [
+  { id: '1', description: 'Terminar o desafio', isComplete: false },
+  { id: '2', description: 'Subir para o github', isComplete: false },
+  { id: '3', description: 'Compartilhar no LinkedIn', isComplete: false },
+  { id: '4', description: 'Fazer post no Instagram', isComplete: true }
+]
 
 export function App() {
   return (
@@ -19,11 +26,7 @@ export function App() {
             placeholder="Adicione uma nova tarefa"
           />
 
-          <button type="submit" className={styles.submit}>
-            <span>Criar</span>
-
-            <PlusCircle size={16} weight="bold" />
-          </button>
+          <Button type='submit'>Criar</Button>
         </form>
 
         <div className={styles.tasks}>
@@ -45,19 +48,21 @@ export function App() {
             </div>
           </header>
 
-          <main>
-            <section className={styles.empty}>
-              <img
-                src={clipboard}
-                alt="bloco de anotações com linhas preenchidas e tons de cinza"
-              />
+          {/* <section className={styles.empty}>
+            <img
+              src={clipboard}
+              alt="bloco de anotações com linhas preenchidas e tons de cinza"
+            />
 
-              <p>
-                <strong>Você ainda não tem tarefas cadastradas</strong>
-                <span>Crie tarefas e organize seus itens a fazer</span>
-              </p>
-            </section>
-          </main>
+            <p>
+              <strong>Você ainda não tem tarefas cadastradas</strong>
+              <span>Crie tarefas e organize seus itens a fazer</span>
+            </p>
+          </section> */}
+
+          <section className={styles.list}>
+            {tasks.map(task => <Task key={task.id} />)}
+          </section>
         </div>
       </main>
     </div>

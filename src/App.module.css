@@ -17,35 +17,12 @@
   gap: 0.5rem;
 }
 
-.form .submit {
-  border: none;
-  border-radius: 8px;
-  outline: none;
-
-  background-color: var(--blue-dark);
-
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 1.4;
-  color: var(--gray-100);
-
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  padding: 1rem;
-
-  cursor: pointer;
-
-  transition: background-color .2s;
-}
-
-.form .submit:hover {
-  background-color: var(--blue);
-}
-
 .tasks {
   margin-top: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .tasks .info {
@@ -84,11 +61,7 @@
   border-radius: 999px;
 }
 
-.tasks main {
-  margin-top: 1.5rem;
-}
-
-.tasks main .empty {
+.tasks .empty {
   padding: 4rem 1.5rem;
 
   display: flex;
@@ -102,21 +75,27 @@
   border-radius: 8px;
 }
 
-.tasks main .empty img {
+.tasks .empty img {
   width: 56px;
 }
 
-.tasks main .empty p {
+.tasks .empty p {
   font-size: 1rem;
   line-height: 1.4;
   color: var(--gray-300);
 }
 
-.tasks main .empty p > strong {
+.tasks .empty p > strong {
   display: block;
   font-weight: 700;
 }
 
-.tasks main .empty p > span {
+.tasks .empty p > span {
   display: block;
+}
+
+.tasks .list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
