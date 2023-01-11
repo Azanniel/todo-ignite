@@ -19,6 +19,7 @@
 
 .tasks {
   margin-top: 4rem;
+  padding-bottom: 4rem;
 
   display: flex;
   flex-direction: column;
